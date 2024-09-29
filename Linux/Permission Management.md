@@ -1,3 +1,9 @@
+---
+title: Permission Management
+updated: 2024-09-26 21:00:44Z
+created: 2024-09-20 01:48:16Z
+---
+
 # Permission Management
 
 Under Linux, permissions are assigned to users and groups. Each user can be a member of different groups, and membership in these groups gives the user specific, additional permissions. Each file and directory belongs to a specific user and a specific group. So the permissions for users and groups that defined a file are also defined for the respective owners. When we create new files or directories, they belong to the group we belong to, and to us.
@@ -124,4 +130,4 @@ drw-rw-r-T 3 bobinsson bobinsson   4096 Jan 12 12:32 reports
 
 In this example, we see that both directories have the sticky bit set. However, the <span style="color: #2dc26b;">reports</span> folder has an uppercase <span style="color: #2dc26b;">T</span>, and the <span style="color: #2dc26b;">scripts</span> folder has a lowercase t.
 
-Id the sticky bit is capitalized ( <span style="color: #2dc26b;">T</span> ), then this means that all other users do not have <span style="color: #2dc26b;">execute</span> ( <span style="color: #2dc26b;">x</span> ) permissions and, therefore, cannot see the contents of the folder nor run any programs from it. The lowercase sticky bit ( <span style="color: #2dc26b;">t</span> ) is the sticky bit where <span style="color: #2dc26b;">execute</span> ( <span style="color: #2dc26b;">x</span> ) permissions have been set.
+If the sticky bit is capitalized ( <span style="color: #2dc26b;">T</span> ), then this means that all other users do not have <span style="color: #2dc26b;">execute</span> ( <span style="color: #2dc26b;">x</span> ) permissions and, therefore, cannot see the contents of the folder nor run any programs from it. The lowercase sticky bit ( <span style="color: #2dc26b;">t</span> ) is the sticky bit where <span style="color: #2dc26b;">execute</span> ( <span style="color: #2dc26b;">x</span> ) permissions have been set.
