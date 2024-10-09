@@ -1,9 +1,3 @@
----
-title: Package Management
-updated: 2024-09-29 00:51:02Z
-created: 2024-09-27 15:05:22Z
----
-
 # Package Management
 
 Whether working as a system administrator, maintaining our own Linux machines at home, or building/upgrading/maintaining our penetration testing distribution of choice, it is crucial to have a firm grasp on the available Linux package managers and the various ways to utilize them to install, update, or remove packages. Packages are archives that contain binaries of software, configuration files, information about dependencies and keep track pf updates and upgrades. The features that most package management systems provide are:

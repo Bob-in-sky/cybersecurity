@@ -1,9 +1,3 @@
----
-title: Service and Process Management
-updated: 2024-09-29 00:44:13Z
-created: 2024-09-28 18:38:45Z
----
-
 # Service and Process Management
 
 In general, there are two types of services: internal, the relevant services that are required at system startup, which for example perform hardware-related tasks. And services that are installed by the user, which usually include all server services. Such services run in the background without any user interaction. These are also called <span style="color: #2dc26b;">daemons</span> and are identified by the letter "<span style="color: #2dc26b;">d</span>" at the end of the program name, for example <span style="color: #2dc26b;">sshd</span> or <span style="color: #2dc26b;">systemd</span>.

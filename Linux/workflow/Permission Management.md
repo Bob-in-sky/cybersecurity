@@ -1,9 +1,3 @@
----
-title: Permission Management
-updated: 2024-09-26 21:00:44Z
-created: 2024-09-20 01:48:16Z
----
-
 # Permission Management
 
 Under Linux, permissions are assigned to users and groups. Each user can be a member of different groups, and membership in these groups gives the user specific, additional permissions. Each file and directory belongs to a specific user and a specific group. So the permissions for users and groups that defined a file are also defined for the respective owners. When we create new files or directories, they belong to the group we belong to, and to us.

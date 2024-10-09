@@ -24,7 +24,7 @@ Fetched 95,1 kB in 0s (270 kB/s)
 
 After having started it, it's possible to navigate to the default page (http://localhost) by using the browser.
 
-![image](../_resources/apache-default.png)
+![image](../../_resources/apache-default.png)
 
 <span style="color: #a4b1cd;">This is the default page after installation and serves to confirm that the webserver is working correctly.</span>
 
@@ -84,7 +84,7 @@ bobinsson@BoB$ python3 -m http.server
 Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 ```
 
-![image](../_resources/python3-browser.png)
+![image](../../_resources/python3-browser.png)
 
 &nbsp;
 
