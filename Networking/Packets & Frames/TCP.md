@@ -1,13 +1,29 @@
-# TCP/IP
+# TCP/IP Model
 
-The Transmission Control Protocol (TCP) is similar to the OSI model. THE TCP/IP protocol consists of four layers and is arguably just a summarized version of the OSI model:
+The Transmission Control Protocol (TCP) Model is similar to the OSI model. THE TCP/IP protocol consists of four layers and is arguably just a summarized version of the OSI model:
 
-- Application
-- Transport
-- Internet
-- Network Interface
+- **Application Layer:** The OSI model application, presentation and session layers, i.e., layers 5, 6, and 7, are grouped into the application layer in the TCP/IP model.
+- **Transport Layer:** This is layer 4.
+- **Internet Layer:** This is layer 3. The OSI model’s network layer is called the Internet layer in the TCP/IP model.
+- **Link/Network Interface Layer:** This is layer 2.
 
 Very similar to how the OSI works, information is added to each layer of the TCP model as the piece of data (packet) traverses it. As you may recall, this process is known as encapsulation - where the reverse of this process is decapsulation.
+
+The table below shows how the TCP/IP model layers map to the ISO/OSI model layers.
+
+| Layer Number | ISO OSI Model | <span style="color: inherit;">TCP</span>/IP Model (<span style="color: inherit;">RFC</span> 1122) | Protocols |
+| --- | --- | --- | --- |
+| 7   | Application Layer | Application Layer | HTTP, HTTPS, FTP, POP3, <span style="color: inherit;">SMTP</span>, <span style="color: inherit;">IMAP</span>, Telnet, <span style="color: inherit;">SSH</span>, |
+| 6   | Presentation Layer | Application Layer |     |
+| 5   | Session Layer | Application Layer |     |
+| 4   | Transport Layer | Transport Layer | TCP, <span style="color: inherit;">UDP</span> |
+| 3   | Network Layer | Internet Layer | IP, ICMP, IPSec |
+| 2   | Data Link Layer | Link Layer | Ethernet 802.3, WiFi 802.11 |
+| 1   | Physical Layer |     |     |
+
+&nbsp;
+
+# TCP Protocol
 
 One defining feature of TCP is that it is **connection-based**, which means that TCP must establish a connection between both a client and a device acting as a server **before** data is sent.
 
@@ -78,6 +94,6 @@ Because TCP reserves system resources on a device, it is best practice to close 
 
 To initiate the closure of a TCP connection, the device will send a "FIN" packet to the other device, which will need to be acknowledged by the other device:
 
-<img src="../../_resources/d29463eda80fa9e4cbe78b16aa5d9f87.svg" alt="d29463eda80fa9e4cbe78b16aa5d9f87.svg" width="482" height="466">
+<img src="../../_resources/d29463eda80fa9e4cbe78b16aa5d9f87.svg" alt="d29463eda80fa9e4cbe78b16aa5d9f87.svg" width="482" height="466" class="jop-noMdConv">
 
 In the illustration, Alice has sent Bob a "FIN" packet. Because Bob received this, he will let Alice know that he received it and that he also wants to close the connection (using FIN). Alice has heard Bob loud and clear and will let Bob know that she acknowledges this.

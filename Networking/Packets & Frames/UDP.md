@@ -1,4 +1,4 @@
-# UDP/IP
+# UDP
 
 Unlike TCP, the User Datagram Protocol (UDP) is a **stateless** protocol that doesn't require a constant connection between the two devices for data to be sent. For example, the three-way handshake does not occur, nor is there any synchronization or acknowledgement between the two devices.
 
@@ -29,6 +29,6 @@ UDP packets are much simpler and have fewer headers compared to TCP. However, bo
 
 The diagram below shows a normal UDP connection between two devices:
 
-<img src="../../_resources/53d459ccda57e5fdea0dafe7e64ffe7c.svg" alt="53d459ccda57e5fdea0dafe7e64ffe7c.svg" width="454" height="439">
+<img src="../../_resources/53d459ccda57e5fdea0dafe7e64ffe7c.svg" alt="53d459ccda57e5fdea0dafe7e64ffe7c.svg" width="454" height="439" class="jop-noMdConv">
 
 &nbsp;
